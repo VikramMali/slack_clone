@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/otp.css">
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Open+Sans:ital@1&family=Poppins:wght@100;200;300;500;600&family=Rubik:wght@300;400;500&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF Pro Text:wght@500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto Flex:wght@600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" />
+    <title>OTP pages</title>
+</head>
+
+<body>
+    <header class="hero">
+
+        <div class="form-main">
+            <div class="login form">
+
+                <header class="head">
+                    <div> <img src="img/icon.png" alt=""></div>
+                    <span>Slack</span>
+                </header>
+                <div class="sub-head">
+                    <span>OTP verification</span>
+                </div>
+                <form action="#">
+                    <div class="otp-fill-box">
+                        <input class="fill" type="text" placeholder="">
+                        <input class="fill" type="text" placeholder="">
+                        <input class="fill" type="text" placeholder="">
+                        <input class="fill" type="text" placeholder="">
+                        <input class="fill" type="text" placeholder="">
+                        <input class="fill" type="text" placeholder="">
+
+                    </div>
+                    <!-- input fill in every box automatic change box one to next -->
+                    <script>
+                        const otpInputs = document.querySelectorAll('.otp-fill-box input');
+
+                        otpInputs.forEach((input, index) => {
+                            input.addEventListener('input', (event) => {
+                                const currentInput = event.target;
+                                const nextInput = otpInputs[index + 1];
+                                if (nextInput && currentInput.value) {
+                                    nextInput.focus();
+                                }
+                            });
+                        });
+                    
+
+                    </script>
+                    <a href="create.html"><input  type="button" class="button" value="SUBMIT"></a>
+                </form>
+
+
+                <div class="resend">
+                    <span>
+                        Doesn’t receive OTP ?</span>
+                        <span class="re-send">
+                            Re Send
+                        </span>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+
+    </header>
+</body>
+
+</html>
