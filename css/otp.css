@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Open+Sans:ital@1&family=Poppins:wght@100;200;300;500;600&family=Rubik:wght@300;400;500&family=Ubuntu:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Open+Sans:ital@1&family=Poppins:wght@100;200;300;500;600&family=Rubik:wght@300;400;500&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+  --font-roboto: Roboto;
+  --font-roboto-flex: "Roboto Flex";
+  --font-sf-pro-text: "SF Pro Text";
+
+  /* font sizes */
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 35px;
+  --font-size-xl: 26px;
+  --font-size-2xl: 36px;
+
+  /* Colors */
+  --neutral-4: #fff;
+  --secondary: #ff8a00;
+  --gray-600: #52525b;
+  --primary-new1: #5c175d;
+  --color-steelblue-200: #4A154B;
+  --color-aliceblue: #ecf9ff;
+  --color-floralwhite-100: #fff9f2;
+  --gray-900: #101828;
+  --color-darkslategray: #3e3e3e;
+  --dark-grey: #777586;
+
+  /* Gaps */
+  --gap-xs: 16px;
+  --gap-sm: 24px;
+  --gap-md: 32px;
+  --gap-lg: 32.2px;
+
+  /* border radiuses */
+  --br-xs: 8.33px;
+  --br-sm: 16px;
+  --br-md: 17.87px;
+  --br-lg: 17.89px;
+
+  /* Effects */
+  --drop-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+h1 {
+  color: var(--color-steelblue-200);
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.form-main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+}
+.sub-head{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: larger;
+  font-weight: 500;
+  color: #3e3e3e;
+}
+
+.form-main .form{
+  padding: 5rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+ .form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(108, 9, 133, 0.5);
+   border: 0.5px solid rgba(56, 5, 68, 0.5);
+ }
+ .otp-fill-box{
+    display: flex;
+    gap: 10px;
+ }
+form .fill{
+  
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+   
+}
+.form input.button{
+  color: #fff;
+  background: var(--color-steelblue-200);
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+
+}
+
+.form input.button:hover{
+  background: #5c175d;
+  transform:translateY(-5px);
+
+
+}
+.resend{
+  margin-top: 2rem;
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  font-size: 17px;
+  text-align: center;
+  color: #52525b;
+ 
+}
+.resend label{
+  color: var();
+  cursor: pointer;
+}
+.resend label:hover{
+  text-decoration: underline;
+}
+.resend .re-send{
+    color: rgb(74, 24, 238);
+    cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .form-main{
+    width: 400px;
+   
+  }
+  .form-main .form{
+    padding: 2rem;
+  }
+  form .fill{
+    margin-top: 1rem;
+    margin: auto;
+    
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+  
+
+
+}
