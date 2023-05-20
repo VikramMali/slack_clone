@@ -224,4 +224,7 @@ li {
             flex-direction: column;
             align-items: flex-start;
         }
+     .buttons{
+          width: 100%;
+        }
   }
