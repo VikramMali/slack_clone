@@ -96,3 +96,26 @@ window.onclick = (e) => {
     rightSidebarWrapper.classList.remove("sidebar-wrapper-display");
   }
 };
+
+// pop up stylee display hide
+
+function showPopup() {
+  var overlay = document.getElementById('popupOverlay');
+  overlay.style.display = 'block';
+}
+
+window.addEventListener('click', function(event) {
+  var overlay = document.getElementById('popupOverlay');
+  if (event.target === overlay) {
+      overlay.style.display = 'none';
+  }
+});
+
+function submitForm() {
+  var nameInput = document.getElementById('nameInput');
+  var name = nameInput.value;
+  // Perform any necessary action with the submitted name
+  console.log('Submitted name: ' + name);
+  var overlay = document.getElementById('popupOverlay');
+  overlay.style.display = 'none';
+}
