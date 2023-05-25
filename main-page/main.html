@@ -54,7 +54,19 @@
 
 
     <main class="main">
+      <!-- user edit pop up style -->
+      <div class="overlay" id="popupOverlay">
+        <div class="popup-card">
+            <h2>Create Channel</h2>
+            <label for="name">Name</label>
+            <input type="text" id="nameInput" placeholder="# e.g plan finance">
+            <p>Channels are where conversations happen around a topic. Use a name that is easy to find and understand.</p>
+            <button onclick="submitForm()">Create Channel</button>
+        </div>
+    </div>
 
+   
+   
       <!-- ----------------Side design-------------- -->
       <section class="sidebar">
         <article class="sidebar-1">
@@ -72,7 +84,8 @@
             <p class="sidebar-user-info-additional">
               <i class="fas fa-circle"></i>Jhon Roby
             </p>
-            <span class="user-edit-icon"><i class="fas fa-edit"></i></span>
+            <span class="user-edit-icon" ><i class="fas fa-edit"></i></span>
+            <!-- <span class="user-edit-icon"><i class="fas fa-edit"></i></span> -->
          
           
           </section>
@@ -115,7 +128,7 @@
                 <a href="#"><i class="fas fa-lock"></i>Music</a>
               </li>
               <li>
-                <a href="#"><i class="fas fa-add"></i>Add Channel</a>
+                <a href="#" onclick="showPopup()"><i class="fas fa-add"></i>Add Channel</a>
               </li>
 
             </ul>
