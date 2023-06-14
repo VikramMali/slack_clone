@@ -1,0 +1,306 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Open+Sans:ital@1&family=Poppins:wght@100;200;300;500;600&family=Rubik:wght@300;400;500&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+  --font-roboto: Roboto;
+  --font-roboto-flex: "Roboto Flex";
+  --font-sf-pro-text: "SF Pro Text";
+
+ /* font sizes */
+  --small-text: 12px;
+  --text: 16px;
+  --head-text: 20px;
+  --heading: 26px;
+
+  /* font sizes for big size text */
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-30: 30px;
+  --font-size-26: 26px;
+  --font-size-36: 36px;
+
+  /* Colors */
+  --neutral-4: #fff;
+  --smoke: #52525b;
+  --chatbox: #7921de ;
+  --black:#242424;
+  --dark-grey: #777586;
+  --error-color:rgb(220, 0, 0);
+  --succcess-color:rgb(17, 157, 17);
+  /* Gaps */
+  --gap-xs: 5px;
+  --gap-sm: 10px;
+  --gap-md: 15px;
+  --gap-lg: 20px;
+
+  /* border radiuses */
+ 
+  /* input border */
+  --input-border: 2px solid #000000;
+  /* on focus border */
+  --focus-border: 2px solid var(--chatbox);;
+
+  /* Effects */
+  --drop-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08);
+}
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 2rem; */
+
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.title h2{
+ 
+    font-size: var(--font-size-30);
+    color: var(--smoke);
+}
+.title span{
+    font-size:var(--dark-grey);
+    
+}
+.left{
+    width: 412px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.sub-head{
+   margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+.right img{
+    width: 479px;
+    height: 360px;
+    border-radius: 5px;
+}
+.buttonss{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.buttonss span.or{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.create,.join {
+  display: block;
+  width: 100%;
+  letter-spacing: 1px;
+  height: 50px;
+  background: var(--chatbox);
+  font-size: 1.2rem;
+  color: var(--neutral-4);
+  outline: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.last-head{
+  font-size: 16px;
+  color: var(--dark-grey);
+}
+
+/*  Responsive */
+@media screen and (max-width: 1330px) {
+  .right img{
+    width: 350px;
+    height: 350px;
+    
+  }
+ 
+}
+@media screen and (max-width: 900px) {
+.sub-head{
+ 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+.left{
+  max-width: 100%;
+}
+
+  .title{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.title h2{
+  font-size: 30px;
+}
+.title span{
+  font-size: 20px;
+}
+.heading{
+  align-items: center;
+  justify-content: center;
+}
+
+
+.last-head{
+  font-size: 12px;
+}
+
+.create {
+  height: 40px;
+  font-size: 14px;
+  max-width: 100%;
+ 
+
+
+}
+.join {
+  height: 40px;
+  font-size: 14px;
+  max-width: 100%;
+
+
+}
+
+
+}
+
+@media only screen and (max-width: 480px) {
+  .hero{
+    width:80%;
+   
+  
+  }
+  .sub-head{
+    width: 100%;
+   
+  }
+  .left{
+    max-width: 100%;
+  }
+  
+    .title{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .title h2{
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+  .title span{
+    font-size: 15px;
+  }
+  
+ 
+  .last-head{
+    font-size: 12px;
+  }
+  
+
+  .join {
+    height: 30px;
+    font-size: 12px;
+   width: 100%;
+   
+
+
+  
+  }
+  .buttonss{
+   justify-content: center;
+  }
+  .create{
+  
+    height: 30px;
+    font-size: 12px;
+    width: 100%;
+    
+   
+ 
+
+  }
+}

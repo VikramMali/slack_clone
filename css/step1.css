@@ -1,0 +1,204 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Open+Sans:ital@1&family=Poppins:wght@100;200;300;500;600&family=Rubik:wght@300;400;500&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+  --font-roboto: Roboto;
+  --font-roboto-flex: "Roboto Flex";
+  --font-sf-pro-text: "SF Pro Text";
+
+ /* font sizes */
+  --small-text: 12px;
+  --text: 16px;
+  --head-text: 20px;
+  --heading: 26px;
+
+  /* font sizes for big size text */
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-30: 30px;
+  --font-size-26: 26px;
+  --font-size-40: 40px;
+
+  /* Colors */
+  --neutral-4: #fff;
+  --smoke: #52525b;
+  --chatbox: #7921de ;
+  --black:#242424;
+  --dark-grey: #777586;
+  --error-color:rgb(220, 0, 0);
+  --succcess-color:rgb(17, 157, 17);
+  /* Gaps */
+  --gap-xs: 5px;
+  --gap-sm: 10px;
+  --gap-md: 15px;
+  --gap-lg: 20px;
+
+  /* border radiuses */
+ 
+  /* input border */
+  --input-border: 2px solid #000000;
+  /* on focus border */
+  --focus-border: 2px solid var(--chatbox);;
+
+  /* Effects */
+  --drop-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container{
+    
+    width: 60%;
+    margin: auto;
+}
+.head{
+    margin-top: 2rem;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+
+}
+.head i{
+  cursor: pointer;
+}
+.head span{
+    font-size: 18px;
+}
+.sub-head{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 60%;
+  width: 100%;
+  gap: 2rem;
+  align-items: flex-start;
+
+}
+.question{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.question h1{
+    font-size: var(--font-size-40);
+    color: var(--smoke);
+}
+.question span{
+  color: var(--dark-grey);
+}
+.inputs{
+  width: 100%;
+  
+}
+
+.inputs input{
+  width: 100%;
+    margin: auto;
+    background-color: var(--neutral-4);
+    height: 60px;
+    font-size: 17px;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    outline: none;
+    color: var(--neutral-4);
+    
+    
+    
+  }
+
+  .inputs input[type=text]{
+   width: 100%;
+    padding: 0.7em 1.2em;
+    margin: 0.5em 0;
+    border: var(--input-border);
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    color: var(--black);
+
+
+  }
+  .inputs input[type=text]:focus{
+    border: var(--focus-border);
+  }
+
+  .nexts input{
+    height: 60px;
+    width: 100%;
+    padding: 0 100px;
+    font-size: 17px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+  }
+ 
+  .nexts input.button{
+    color: var(--neutral-4);
+    background: var(--chatbox);
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    cursor: pointer;
+   
+  }
+ 
+
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .question h1 {
+      font-size: 1.5em;
+    }
+  
+    .question span {
+      font-size: 0.9em;
+    }
+  
+  }
+  @media screen and (max-width: 1016px){
+    .inputs input[type=text]{
+        
+        width: 100%
+        }
+  }
