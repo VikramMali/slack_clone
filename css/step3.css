@@ -11,10 +11,7 @@
 html,
 body {
   width: 100vw;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+ 
 }
 
 :root {
@@ -160,17 +157,17 @@ li {
   .nexts{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 10px;
   }
  
-  .button{
+  .next{
     height: 60px;
     width: 100%;
-    padding: 0px 100px;
+    padding: 10px 100px;
     font-size: 16px;
     margin-bottom: 1rem;
-    border: 1px solid var(--color-floralwhite-100);
+    border: none;
     border-radius: 6px;
     outline: none;
     color: var(--neutral-4);
@@ -179,9 +176,8 @@ li {
     letter-spacing: 1px;
     margin-top: 1rem;
     cursor: pointer;
-/*     transition: 0.4s; */
     align-items: center;
-    justify-content: center;
+  
   }
   .buttons{
     height: 60px;
@@ -189,25 +185,25 @@ li {
     padding: 10 100px;
     font-size: 16px;
     margin-bottom: 1rem;
-    border: 1px solid var(--color-floralwhite-100);
     border-radius: 6px;
-    outline: none;
+    border: none;
     color: var(--neutral-4);
     background: var(--chatbox);
     font-weight: 300;
     letter-spacing: 1px;
     margin-top: 1rem;
     cursor: pointer;
-    transition: 0.4s;
     align-items: center;
   }
   .nexts{
     width: 100%;
   }
   .nexts span{
+    
     width: 100%;
     font-size: 16px;
     text-decoration: underline;
+    white-space: nowrap;
   }
  
 
@@ -215,6 +211,7 @@ li {
  
   /* Responsive */
   @media screen and (max-width: 768px) {
+    
     .question h1 {
       font-size: 1.5em;
     }
@@ -241,7 +238,5 @@ li {
           align-items: center;
           
         }
-        .button{
-          width: 100%;
-        }
+        
   }
