@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    <!-- Normalize css link -->
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- Link css -->
-    <link rel="stylesheet" href="css/otp.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,64 +26,57 @@
 </head>
 
 <body>
-    <header class="hero">
+    <div class="form-main">
+        <div class="login form">
 
-        <div class="form-main">
-            <div class="login form">
-
-                <header class="head">
-                    <div> <img src="img/icon.png" alt=""></div>
-                    <span>Slack</span>
-                </header>
-                <div class="sub-head">
-                    <span>OTP verification</span>
-                </div>
-                <form action="#">
-                    <div class="otp-fill-box">
-                        <input class="fill" type="text" placeholder="">
-                        <input class="fill" type="text" placeholder="">
-                        <input class="fill" type="text" placeholder="">
-                        <input class="fill" type="text" placeholder="">
-                        <input class="fill" type="text" placeholder="">
-                        <input class="fill" type="text" placeholder="">
-
-                    </div>
-                    <!-- input fill in every box automatic change box one to next -->
-                    <script>
-                        const otpInputs = document.querySelectorAll('.otp-fill-box input');
-
-                        otpInputs.forEach((input, index) => {
-                            input.addEventListener('input', (event) => {
-                                const currentInput = event.target;
-                                const nextInput = otpInputs[index + 1];
-                                if (nextInput && currentInput.value) {
-                                    nextInput.focus();
-                                }
-                            });
-                        });
-                    
-
-                    </script>
-                    <a href="create.html"><input  type="button" class="button" value="SUBMIT"></a>
-                </form>
-
-
-                <div class="resend">
-                    <span>
-                        Doesn’t receive OTP ?</span>
-                        <span class="re-send">
-                            Re Send
-                        </span>
-
-                </div>
+            <header class="head">
+                <div> <img src="img/icon.png" alt=""></div>
+                <span>Slack</span>
+            </header>
+            <div class="sub-head">
+                <span>OTP verification</span>
             </div>
+            <form action="#">
+                <div class="otp-fill-box">
+                    <input class="fill" type="text" placeholder="">
+                    <input class="fill" type="text" placeholder="">
+                    <input class="fill" type="text" placeholder="">
+                    <input class="fill" type="text" placeholder="">
+                    <input class="fill" type="text" placeholder="">
+                    <input class="fill" type="text" placeholder="">
 
+                </div>
+                <!-- input fill in every box automatic change box one to next -->
+                <script>
+                    const otpInputs = document.querySelectorAll('.otp-fill-box input');
+
+                    otpInputs.forEach((input, index) => {
+                        input.addEventListener('input', (event) => {
+                            const currentInput = event.target;
+                            const nextInput = otpInputs[index + 1];
+                            if (nextInput && currentInput.value) {
+                                nextInput.focus();
+                            }
+                        });
+                    });
+
+
+                </script>
+                <a href="create.html"><input type="button" class="button" value="SUBMIT"></a>
+            </form>
+
+
+            <div class="resend">
+                <span>
+                    Doesn’t receive OTP ?</span>
+                <span class="re-send">
+                    Re Send
+                </span>
+
+            </div>
         </div>
-        </div>
 
-
-
-    </header>
+    </div>
 </body>
 
 </html>
